@@ -16,21 +16,23 @@ if [ ! -e $HOME/WorkingDocument/ ]; then
 	mkdir -p ~/WorkingDocument/
 fi
 
-cp ~/.zshrc /tmp/zshrc.bak
+cp -f ~/.zshrc /tmp/zshrc.bak
 if_mycmd
 
 if [ -e ~/.p10k.zsh ]; then
-	cp ~/.p10k.zsh /tmp/p10k.zsh.bak
+	cp -f ~/.p10k.zsh /tmp/p10k.zsh.bak
 	if_mycmd
 fi
 
-cp ~/.tmux.conf.local /tmp/tmux.conf.local.bak
+cp -f ~/.tmux.conf.local /tmp/tmux.conf.local.bak
 if_mycmd
 
-cp ~/WorkingDocument/profile/zsh/.zshrc ~/.zshrc
+# StartConfiging
+
+cp -f ~/WorkingDocument/profile/zsh/.zshrc ~/.zshrc
 if_mycmd
 
-cp ~/WorkingDocument/profile/zsh/.p10k.zsh ~/.p10k.zsh
+cp -f ~/WorkingDocument/profile/zsh/.p10k.zsh ~/.p10k.zsh
 if_mycmd
 
 # Install plugins
@@ -39,11 +41,11 @@ git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/resurre
 if_mycmd
 sleep 10
 
-cp ~/WorkingDocument/profile/tmux/.tmux.conf.local ~/.tmux.conf.local
+cp -f ~/WorkingDocument/profile/tmux/.tmux.conf.local ~/.tmux.conf.local
 
-cp ~/WorkingDocument/profile/alacritty/ -r ~/.config/
+cp ~/WorkingDocument/profile/alacritty/ -rf ~/.config/
 
-cp ~/WorkingDocument/profile/joshuto/ ~/.config/joshuto/
+cp -rf ~/WorkingDocument/profile/joshuto/ ~/.config/
 
-cp ~/WorkingDocument/profile/ulauncher/init.trans ~/.translate-shell
+cp -f ~/WorkingDocument/profile/ulauncher/init.trans ~/.translate-shell
 if_mycmd
