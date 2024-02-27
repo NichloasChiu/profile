@@ -1,0 +1,123 @@
+# NOTE:https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+# 导入其他配置文件。
+# 导入是按顺序加载的，跳过所有缺失的文件,最后加载的文件。如果一个字段已经存在于之前的导入中，它将被替换。
+# 所有导入必须是以/开头的绝对路径，或者是路径,相对于以~开头的用户主目录。
+import = [ 
+  "~/.config/alacritty/themes/themes/tokyo-night-storm.toml",
+  "~/.config/alacritty/fonts.toml"
+  #"~/.config/alacritty/alacritty-bindings.toml"
+]
+# 实时重新加载配置
+live_config_reload = true
+
+[env]
+TERM = "tmux-256color"
+
+[window]
+# 在终端内容周围均匀地散布额外的填充
+dynamic_padding = true
+# 允许终端应用程序更改Alacritty的窗口标题
+dynamic_title = true
+# 覆盖System主题/GTK主题/Wayland客户端的变体
+decorations = "None"
+# 透明度
+opacity = 0.9
+# 启动模式 "常规的窗口"
+startup_mode = "Windowed"
+# 首选按等于单元格尺寸的离散步骤调整窗口大小
+resize_increments = true
+title = "NichloasChiu"
+
+# 设置默认启动大小
+[window.dimensions]
+columns = 120
+lines = 35
+
+[window.padding]
+x = 10
+y = 15
+
+# 滚动
+[scrolling]
+# 回滚缓冲区中的最大行数
+history = 10000
+multiplier = 3
+
+#视觉铃声动画效果，当视觉铃声响起时，屏幕闪烁。
+[bell]
+animation = "EaseOutExpo"
+duration = 100
+color = "#ffffff"
+
+# 光标
+[cursor]
+# 当设置为_true_时，光标将呈现为一个空心框
+unfocused_hollow = true
+# 光标闪烁间隔，单位为毫秒
+blink_interval = 700
+# 光标停止闪烁的时间，单位为秒
+blink_timeout = 3
+
+#终端光标显示
+[cursor.style]
+shape = "Block"
+# 闪烁= 总是
+blinking = "Always"
+
+# vim终端显示
+[cursor.vi_mode_style]
+ shape = "Block"
+ blinking = "Always"
+
+# 鼠标设置
+[mouse]
+# 当设置为_true_时，光标在输入时被暂时隐藏
+hide_when_typing = true
+
+[[mouse.bindings]]
+mouse = "Right"
+action = "Paste"
+
+[debug]
+# 显示绘制每帧所需的时间
+render_timer = false
+
+
+[[hints.enabled]]
+regex = '(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^{-}\^⟨⟩`]+'
+hyperlinks = true
+command = "xdg-open"
+post_processing = true
+
+  [hints.enabled.mouse]
+  enabled = true
+  mods = "None"
+
+  [hints.enabled.binding]
+  key = "U"
+  mods = "Control|Shift"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+save_to_clipboard = true
+
+# Shell
+#
+# shell:
+#   program: /usr/local/bin/fish
+#   args:
+#     - --login
+#
+# shell:
+#   program: /usr/local/bin/tmux
+#   args:
+#     - new-session
+#     - -A
+#     - -D
+#     - -s
+#     - main
+# test
+#
+[shell]
+program = "/bin/zsh"
+args = [ "-l", "-c", "tmux new-session -A -D -s main" ]
