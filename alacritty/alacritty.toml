@@ -116,7 +116,6 @@ save_to_clipboard = true
 #     - -D
 #     - -s
 #     - main
-# test
 #
 [shell]
 program = "/bin/zsh"
