@@ -31,19 +31,19 @@ chmod +x OverrideConf.sh
     - zsh
 
       ```shell
-      cp ~/.zshrc /tmp/zshrc.bak
+      cp -f ~/.zshrc /tmp/zshrc.bak
       ```
 
     - zsh themes
 
       ```shell
-      cp ~/.p10k.zsh /tmp/p10k.zsh.bak
+      cp -f ~/.p10k.zsh /tmp/p10k.zsh.bak
       ```
 
     - .tmux
 
       ```shell
-      cp ~/.tmux.conf.local /tmp/tmux.conf.local.bak
+      cp -f ~/.tmux.conf.local /tmp/tmux.conf.local.bak
       ```
 
 3.  Overwrite your historical configuration
@@ -51,13 +51,13 @@ chmod +x OverrideConf.sh
     - zsh
 
       ```shell
-      cp ~/WorkingDocument/profile/zsh/.zshrc ~/.zshrc
+      cp -f ~/WorkingDocument/profile/zsh/.zshrc ~/.zshrc
       ```
 
     - zsh themes
 
       ```shell
-      cp ~/WorkingDocument/profile/zsh/.p10k.zsh ~/.p10k.zsh
+      cp -f ~/WorkingDocument/profile/zsh/.p10k.zsh ~/.p10k.zsh
       ```
 
     - ohmytmux
@@ -66,7 +66,7 @@ chmod +x OverrideConf.sh
       # Install plugins
       # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
       git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/resurrect
-      cp ~/WorkingDocument/profile/tmux/.tmux.conf.local ~/.tmux.conf.local
+      cp -f ~/WorkingDocument/profile/tmux/.tmux.conf.local ~/.tmux.conf.local
       ```
 
     - alacritty
@@ -75,9 +75,16 @@ chmod +x OverrideConf.sh
       # Install fonts
       sudo pacman -S nerd-fonts-jetbrains-mono
       # configuration alacritty
-      cp -r ~/WorkingDocument/profile/alacritty ~/.config/
+      cp -rf ~/WorkingDocument/profile/alacritty ~/.config/
       # Install tmux-256color(Execute the command in the ~/.config/alacritty directory)
       sudo /usr/bin/tic -xe tmux-256color terminfo.src
+      ```
+
+    - joshuto
+      
+      ```shell
+      cp -rf ~/WorkingDocument/profile/joshuto ~/.config/
+      sudo chmod +x ~/.config/joshuto/preview_file.sh
       ```
 
 ---
