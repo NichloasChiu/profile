@@ -13,11 +13,11 @@ if_mycmd() {
 	fi
 }
 
-cp ~/.zshrc ~/WorkingDocument/profile/zsh/.zshrc
+cp ~/.zshrc -f ~/WorkingDocument/profile/zsh/.zshrc
 if_mycmd
-cp ~/.p10k.zsh ~/WorkingDocument/profile/zsh/.p10k.zsh
+cp ~/.p10k.zsh -f ~/WorkingDocument/profile/zsh/.p10k.zsh
 if_mycmd
-cp ~/.tmux.conf.local ~/WorkingDocument/profile/tmux/.tmux.conf.local
+cp ~/.tmux.conf.local -f ~/WorkingDocument/profile/tmux/.tmux.conf.local
 if_mycmd
 cp ~/.config/alacritty/ -rf ~/WorkingDocument/profile/
 if_mycmd
