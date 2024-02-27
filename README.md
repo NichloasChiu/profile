@@ -11,7 +11,7 @@ Override configurations can be overridden using scripts or manually
 
 ```shell
 mkdir -p ~/WorkingDocument/
-git clone https://github.com/NichloasChiu/profile.git ~/WorkingDocument/
+git clone https://github.com/NichloasChiu/profile.git ~/WorkingDocument/profile/
 cd ~/WorkingDocument/profile/
 chmod +x OverrideConf.sh
 ./OverrideConf.sh
@@ -60,7 +60,7 @@ chmod +x OverrideConf.sh
       cp -f ~/WorkingDocument/profile/zsh/.p10k.zsh ~/.p10k.zsh
       ```
 
-    - ohmytmux
+    - (.tmux)ohmytmux
 
       ```shell
       # Install plugins
