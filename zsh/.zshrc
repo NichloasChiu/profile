@@ -117,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -alFht'
 alias la='ls -atlh'
 alias l='ls -CF'
-alias f='joshuto'
+alias jo='joshuto'
 alias vml='sudo virsh list --all'
 alias vmstart='sudo virsh start'
 alias vmstop='sudo virsh shutdown'
