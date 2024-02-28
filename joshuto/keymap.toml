@@ -55,9 +55,10 @@ keymap = [
 	{ keys = ["K"],		command = "cursor_move_up 5" },
   { keys = ["h"], commands = ["cd .."] },
   { keys = ["l"], commands = ["open"] },
+  { keys = ["o"], commands = ["open_with"] },
   { keys = ["g", "g"], commands = ["cursor_move_home"] },
   { keys = ["G"], commands = ["cursor_move_end"] },
-  { keys = ["r"], commands = ["open_with"] },
+  { keys = ["r"], commands = ["rename_append"] },
 
   { keys = ["H"], commands = ["cursor_move_page_home"] },
   { keys = ["L"], commands = ["cursor_move_page_middle"] },
@@ -84,8 +85,8 @@ keymap = [
   { keys = ["p", "p"], commands = ["paste_files"] },
   { keys = ["p", "o"], commands = ["paste_files --overwrite=true"] },
 
-  { keys = ["a"], commands = ["rename_append"] },
-  { keys = ["A"], commands = ["rename_prepend"] },
+  { keys = ["a"], commands = [":touch "] },
+  { keys = ["A"], commands = [":mkdir "] },
 
   { keys = ["f", "t"], commands = [":touch "] },
 

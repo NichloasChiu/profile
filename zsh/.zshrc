@@ -1,4 +1,4 @@
-source ~/WorkingDocument/profile/neofetch/show_neofetch_start
+source ~/WorkingDocument/profile//neofetch/show_neofetch_start
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -82,7 +82,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   git
-  autojump
+  # autojump
   extract
 )
 
@@ -117,9 +117,15 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -alFht'
 alias la='ls -atlh'
 alias l='ls -CF'
-alias jo='joshuto'
+alias f='joshuto'
+alias vml='sudo virsh list --all'
+alias vmstart='sudo virsh start'
+alias vmstop='sudo virsh shutdown'
+
 # alias neovim
 alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=/home/ubuntu/software/go
 export GOBIN=/bin
