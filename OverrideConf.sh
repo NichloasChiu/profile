@@ -49,3 +49,8 @@ cp -rf ~/WorkingDocument/profile/joshuto/ ~/.config/
 
 cp -f ~/WorkingDocument/profile/ulauncher/init.trans ~/.translate-shell
 if_mycmd
+
+neofetch | lolcat >/dev/null 2>&1
+if [ $? -ne 0 ]; then
+	sudo pacman -S lolcat --noconfirm
+fi
