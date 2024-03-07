@@ -54,3 +54,6 @@ neofetch | lolcat >/dev/null 2>&1
 if [ $? -ne 0 ]; then
 	sudo pacman -S lolcat --noconfirm
 fi
+
+cp -f ~/WorkingDocument/profile/neofetch/config.conf ~/.config/neofetch/
+if_mycmd
