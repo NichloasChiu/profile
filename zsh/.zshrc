@@ -122,6 +122,7 @@ alias virlist='sudo virsh list --all'
 alias virstart='sudo virsh start'
 alias virstop='sudo virsh shutdown'
 alias vmstart='sudo systemctl start libvirtd;sudo virsh net-start --network default'
+alias xd='xdg-open'
 
 # alias neovim
 alias v="nvim"
