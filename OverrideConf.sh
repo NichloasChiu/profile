@@ -37,7 +37,9 @@ if_mycmd
 
 # Install plugins
 # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/resurrect
+if [ ! -e $HOME/.tmux/plugins/resurrect ]; then
+	git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/resurrect
+fi
 if_mycmd
 sleep 10
 
