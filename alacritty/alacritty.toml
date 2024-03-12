@@ -20,10 +20,12 @@ dynamic_padding = true
 dynamic_title = true
 # 覆盖System主题/GTK主题/Wayland客户端的变体
 decorations = "None"
+# "Full" | "None"
 # 透明度
 opacity = 0.9
 # 启动模式 "常规的窗口"
 startup_mode = "Windowed"
+ # "Windowed" |"Maximized" | "Fullscreen" | "SimpleFullscreen"
 # 首选按等于单元格尺寸的离散步骤调整窗口大小
 resize_increments = true
 title = "NichloasChiu"
@@ -34,8 +36,8 @@ columns = 120
 lines = 35
 
 [window.padding]
-x = 10
-y = 15
+x = 30
+y = 25
 
 # 滚动
 [scrolling]
