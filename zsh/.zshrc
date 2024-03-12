@@ -123,7 +123,6 @@ alias vmstart='sudo virsh start'
 alias vmstop='sudo virsh shutdown'
 alias virstart='sudo systemctl start libvirtd;sudo virsh net-start --network default'
 alias xd='xdg-open'
-alias tn = 'speedtest'
 
 # alias neovim
 alias v="nvim"
