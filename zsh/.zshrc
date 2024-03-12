@@ -118,11 +118,12 @@ alias ll='ls -alFht'
 alias la='ls -atlh'
 alias l='ls -CF'
 alias jo='joshuto'
-alias virlist='sudo virsh list --all'
-alias virstart='sudo virsh start'
-alias virstop='sudo virsh shutdown'
-alias vmstart='sudo systemctl start libvirtd;sudo virsh net-start --network default'
+alias vmlist='sudo virsh list --all'
+alias vmstart='sudo virsh start'
+alias vmstop='sudo virsh shutdown'
+alias virstart='sudo systemctl start libvirtd;sudo virsh net-start --network default'
 alias xd='xdg-open'
+alias tn = 'speedtest'
 
 # alias neovim
 alias v="nvim"
