@@ -123,6 +123,14 @@ alias vmstart='sudo virsh start'
 alias vmstop='sudo virsh shutdown'
 alias virstart='sudo systemctl start libvirtd;sudo virsh net-start --network default'
 alias xd='xdg-open'
+alias top='bpytop'
+alias pS='sudo pacman -S'
+alias pU='sudo pacman -U'
+alias pQs='sudo pacman -Qs'
+alias pSs='sudo pacman -Ss'
+alias pRs='sudo pacman -Rs'
+alias pSy='sudo pacman -Syu'
+
 
 # alias neovim
 alias v="nvim"
