@@ -130,6 +130,7 @@ alias pQs='sudo pacman -Qs'
 alias pSs='sudo pacman -Ss'
 alias pRs='sudo pacman -Rs'
 alias pSy='sudo pacman -Syu'
+alias pull.sh='sh /home/nichloaschiu/WorkingDocument/profile/pull.sh'
 
 
 # alias neovim

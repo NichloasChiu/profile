@@ -23,5 +23,5 @@ cp ~/.config/alacritty/ -rf ~/WorkingDocument/profile/
 if_mycmd
 cp ~/.config/joshuto/ -rf ~/WorkingDocument/profile/
 if_mycmd
-cp ~/.config/neofetch/config.conf/ -f ~/WorkingDocument/profile/neofetch/config.conf
+cp ~/.config/neofetch/config.conf -f ~/WorkingDocument/profile/neofetch/
 if_mycmd
