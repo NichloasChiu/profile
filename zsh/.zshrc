@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # some more ls aliases
-alias ll='ls -alFht'
+alias ll='ls -lFht'
 alias la='ls -atlh'
 alias l='ls -CF'
 alias jo='joshuto'
