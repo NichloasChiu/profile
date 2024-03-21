@@ -32,6 +32,7 @@ video_default = [
 ]
 
 text_default = [
+  { command = "nvim"},
   { command = "micro" },
   { command = "gedit", fork = true, silent = true },
   { command = "bat", args = [
@@ -41,7 +42,10 @@ text_default = [
 
 reader_default = [{ command = "evince", fork = true, silent = true }]
 
-libreoffice_default = [{ command = "libreoffice", fork = true, silent = true }]
+libreoffice_default = [
+  { command = "xdg-open"},
+  { command = "libreoffice", fork = true, silent = true },
+]
 
 [extension]
 

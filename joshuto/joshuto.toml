@@ -4,8 +4,8 @@ mouse_support = true
 focus_on_create = true
 use_trash = true
 watch_files = true
-xdg_open = false
-xdg_open_fork = false
+xdg_open = true
+xdg_open_fork = true
 
 custom_commands = []
 
