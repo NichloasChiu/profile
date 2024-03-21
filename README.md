@@ -240,3 +240,11 @@ For manual installation, refer to [alacritty-github](https://github.com/alacritt
 ```shell
 sudo pacman -S joshuto
 ```
+
+---
+
+> **Author:** NichloasChiu  
+> **Date of creation:** 2022-12-30  
+> **Contact information:** [Email](NichloasChiu2outlook.com)
+
+---
