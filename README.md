@@ -245,6 +245,6 @@ sudo pacman -S joshuto
 
 > **Author:** NichloasChiu  
 > **Date of creation:** 2022-12-30  
-> **Contact information:** [Email](NichloasChiu@outlook.com)
+> **Contact information:** [Email](mailto:NichloasChiu@outlook.com)
 
 ---
