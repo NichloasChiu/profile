@@ -241,6 +241,14 @@ For manual installation, refer to [alacritty-github](https://github.com/alacritt
 sudo pacman -S joshuto
 ```
 
+#### BeautifyFirefox
+Firefox beautification has been ported to the `OverrideConf.sh` in the `profile` project,
+but you need to open `about:config` with firefox, change the following parameters to **true**
+
+| VALUE                            |
+| --------------                   |
+| Browser.tabs.loadBookmarksInTabs |
+| Browser.tabs.closeTabByDblclick  |
 ---
 
 > **Author:** NichloasChiu  

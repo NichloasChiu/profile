@@ -61,14 +61,16 @@ fi
 cp -f $CONFPATH/neofetch/config.conf ~/.config/neofetch/
 if_mycmd
 
-unzip ~/WorkingDocument/profile/firefox/WhiteSur-gtk-theme-master.zip
+unzip $CONFPATH/firefox/WhiteSur-gtk-theme-master.zip -d $CONFPATH/firefox/
 if_mycmd
 
-cd $CONFPATH/firefox/WhiteSur-gtk-theme-master || exit
-if_mycmd
-
-./tweaks.sh -f
-if_mycmd
+if pgrep -x "firefox" >/dev/null; then
+	pkill firefox
+else
+	chmod +x $CONFPATH/firefox/WhiteSur-gtk-theme-master/tweaks.sh
+	sh $CONFPATH/firefox/WhiteSur-gtk-theme-master/tweaks.sh -f
+	if_mycmd
+fi
 
 rm -rf $CONFPATH/firefox/WhiteSur-gtk-theme-master
 if_mycmd
