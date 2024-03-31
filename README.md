@@ -81,7 +81,7 @@ chmod +x OverrideConf.sh
       ```
 
     - joshuto
-      
+
       ```shell
       cp -rf ~/WorkingDocument/profile/joshuto ~/.config/
       sudo chmod +x ~/.config/joshuto/preview_file.sh
@@ -242,13 +242,15 @@ sudo pacman -S joshuto
 ```
 
 #### BeautifyFirefox
-Firefox beautification has been ported to the `OverrideConf.sh` in the `profile` project,
-but you need to open `about:config` with firefox, change the following parameters to **true**
 
-| VALUE                            |
-| --------------                   |
-| Browser.tabs.loadBookmarksInTabs |
-| Browser.tabs.closeTabByDblclick  |
+Enter an `about:config` at the url, and change the following options to the corresponding value
+
+| options                                | value |
+| -------------------------------------- | ----- |
+| Browser.tabs.loadBookmarksInTabs       | true  |
+| Browser.tabs.closeTabByDblclick        | true  |
+| Browser.safebrowsing.downloads.enabled | false |
+
 ---
 
 > **Author:** NichloasChiu  
