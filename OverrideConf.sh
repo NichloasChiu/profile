@@ -50,8 +50,10 @@ cp $CONFPATH/alacritty/ -rf ~/.config/
 
 cp -rf $CONFPATH/joshuto/ ~/.config/
 
-cp -f $CONFPATH/ulauncher/init.trans ~/.translate-shell
-if_mycmd
+# Discard, replace it with UTOOLS
+#
+# cp -f $CONFPATH/ulauncher/init.trans ~/.translate-shell
+# if_mycmd
 
 neofetch | lolcat >/dev/null 2>&1
 if [ $? -ne 0 ]; then
