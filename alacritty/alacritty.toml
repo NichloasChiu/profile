@@ -2,10 +2,11 @@
 # 导入其他配置文件。
 # 导入是按顺序加载的，跳过所有缺失的文件,最后加载的文件。如果一个字段已经存在于之前的导入中，它将被替换。
 # 所有导入必须是以/开头的绝对路径，或者是路径,相对于以~开头的用户主目录。
-import = [ 
+[general]
+import = [
   "~/.config/alacritty/themes/themes/tokyo-night-storm.toml",
   "~/.config/alacritty/fonts.toml"
-  #"~/.config/alacritty/alacritty-bindings.toml"
+  # "~/.config/alacritty/alacritty-bindings.toml"
 ]
 # 实时重新加载配置
 live_config_reload = true
@@ -119,6 +120,7 @@ save_to_clipboard = true
 #     - -s
 #     - main
 #
-[shell]
+[terminal]
+  [terminal.shell]
 program = "/bin/zsh"
 args = [ "-l", "-c", "tmux new-session -A -D -s main" ]
