@@ -144,3 +144,6 @@ export GOPROXY=https://goproxy.io,direct
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
