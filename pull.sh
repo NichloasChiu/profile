@@ -9,7 +9,7 @@
 repo_path="$HOME/WorkingDocument"
 
 if [ ! -e $repo_path ]; then
-	mkdir -p ~/WorkingDocument/
+  mkdir -p ~/WorkingDocument/
 fi
 
 projects=("$repo_path/NichloasChiu-Note" "$repo_path/Manjaro" "$repo_path/profile")
@@ -17,7 +17,7 @@ branches=("master" "main" "main")
 
 # 循环更新每个项目
 for i in "${!projects[@]}"; do
-	cd "${projects[$i]}" || exit
-	git pull origin "${branches[$i]}"
-	echo "Project ${i+1} updated successfully."
+  cd "${projects[$i]}" || exit
+  git pull origin "${branches[$i]}"
+  echo "Project ${i+1} updated successfully."
 done

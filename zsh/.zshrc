@@ -131,6 +131,8 @@ alias pSs='sudo pacman -Ss'
 alias pRs='sudo pacman -Rs'
 alias pSy='sudo pacman -Syu'
 alias pull.sh='sh /home/nichloaschiu/WorkingDocument/profile/pull.sh'
+alias starttodesk='sudo systemctl start todeskd.service'
+
 
 
 # alias neovim
@@ -145,5 +147,7 @@ export GOPROXY=https://goproxy.io,direct
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
+
