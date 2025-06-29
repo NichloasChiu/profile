@@ -132,6 +132,8 @@ alias pRs='sudo pacman -Rs'
 alias pSy='sudo pacman -Syu'
 alias pull.sh='sh /home/nichloaschiu/WorkingDocument/profile/pull.sh'
 alias starttodesk='sudo systemctl start todeskd.service'
+alias vpm=viewturbocore
+
 
 
 
