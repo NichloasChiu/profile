@@ -5,7 +5,7 @@
 [general]
 import = [
   "~/.config/alacritty/themes/themes/tokyo-night-storm.toml",
-  "~/.config/alacritty/fonts.toml"
+  "~/.config/alacritty/fonts.toml",
   # "~/.config/alacritty/alacritty-bindings.toml"
 ]
 # 实时重新加载配置
@@ -25,8 +25,8 @@ decorations = "None"
 # 透明度
 opacity = 0.9
 # 启动模式 "常规的窗口"
-startup_mode = "Windowed"
- # "Windowed" |"Maximized" | "Fullscreen" | "SimpleFullscreen"
+startup_mode = "Maximized"
+# "Windowed" |"Maximized" | "Fullscreen" | "SimpleFullscreen"
 # 首选按等于单元格尺寸的离散步骤调整窗口大小
 resize_increments = true
 title = "NichloasChiu"
@@ -69,8 +69,8 @@ blinking = "Always"
 
 # vim终端显示
 [cursor.vi_mode_style]
- shape = "Block"
- blinking = "Always"
+shape = "Block"
+blinking = "Always"
 
 # 鼠标设置
 [mouse]
@@ -92,13 +92,13 @@ hyperlinks = true
 command = "xdg-open"
 post_processing = true
 
-  [hints.enabled.mouse]
-  enabled = true
-  mods = "None"
+[hints.enabled.mouse]
+enabled = true
+mods = "None"
 
-  [hints.enabled.binding]
-  key = "U"
-  mods = "Control|Shift"
+[hints.enabled.binding]
+key = "U"
+mods = "Control|Shift"
 
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
@@ -121,6 +121,6 @@ save_to_clipboard = true
 #     - main
 #
 [terminal]
-  [terminal.shell]
+[terminal.shell]
 program = "/bin/zsh"
-args = [ "-l", "-c", "tmux new-session -A -D -s main" ]
+args = ["-l", "-c", "tmux new-session -A -D -s main"]
