@@ -7,12 +7,13 @@
 ##########################################################################################################
 # 定义项目列表
 repo_path="$HOME/WorkingDocument"
+vim_path="$HOME/.config/nvim"
 
 if [ ! -e $repo_path ]; then
   mkdir -p ~/WorkingDocument/
 fi
 
-projects=("$repo_path/NichloasChiu-Note" "$repo_path/Manjaro" "$repo_path/profile")
+projects=("$repo_path/NichloasChiu-Note" "$repo_path/Manjaro" "$repo_path/profile" "$vim_path")
 branches=("master" "main" "main")
 
 # 循环更新每个项目
