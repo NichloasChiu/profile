@@ -1,4 +1,5 @@
-source ~/WorkingDocument/profile/neofetch/show_neofetch_start
+# .neofetch是否禁用
+# source ~/WorkingDocument/profile/neofetch/show_neofetch_start
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -158,3 +159,5 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
+export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+export PATH=$JAVA_HOME/bin:$PATH:$PATH
