@@ -1,0 +1,199 @@
+/* ==========================================================================
+   -- 全局颜色变量 --
+   ========================================================================== */
+:root {
+  /* 核心颜色变量 */
+  --background-card-primary: rgba(
+    255,
+    255,
+    255,
+    0.75
+  ); /* 主要卡片背景 (半透明白) */
+  --background-card-secondary: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* 弹出层、标签等背景 (更不透明) */
+  --sidebar-background: rgba(255, 255, 255, 0.7); /* 侧边栏背景 */
+  --text-primary: #1a2027; /* 主要文字颜色 (深灰) */
+  --text-secondary: #4a5568; /* 次要文字颜色 (中灰) */
+  --text-tertiary: #718096; /* 辅助文字颜色 (浅灰) */
+  --accent-primary: #3182ce; /* 主题强调色 (蓝色) */
+  --accent-secondary: rgba(
+    49,
+    130,
+    206,
+    0.1
+  ); /* 强调色的浅色版，用于悬浮状态 */
+  --border-color: rgba(0, 0, 0, 0.12); /* 边框颜色 (半透明黑) */
+  --shadow-color: rgba(44, 62, 80, 0.1); /* 阴影颜色 */
+
+  /* 延迟状态颜色 */
+  --success-color: #2ecc71; /* 成功/低延迟 (绿色) */
+  --warning-color: #f39c12; /* 警告/中延迟 (黄色) */
+  --error-color: #e74c3c; /* 错误/高延迟 (红色) */
+
+  /* 毛玻璃效果 */
+  --backdrop-blur-value: 10px;
+}
+.base-page {
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   -- 主体布局与背景 --
+   ========================================================================== */
+
+/* 将背景应用到最外层的 .layout 容器 */
+.layout {
+  background-image: url("https://user3248.cn.imgto.link/public/20260228/wallhaven-mlpx2m.avif") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* 将左右面板的自身背景设为透明或半透明 */
+.layout__right,
+.clash-verge {
+  /* 兼容部分旧版结构 */
+  background: transparent !important;
+}
+
+.layout__left {
+  background-color: var(--sidebar-background) !important;
+  backdrop-filter: blur(var(--backdrop-blur-value));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-value));
+  border-right: 1px solid var(--border-color) !important;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* 【最终关键修正】根据源码，将主内容容器 .content 的背景设置为透明 */
+.content {
+  background: transparent !important;
+}
+
+/* ==========================================================================
+   -- 左侧边栏：菜单 --
+   ========================================================================== */
+.the-logo {
+  padding: 12px 16px !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.the-menu .MuiListItemButton-root {
+  margin: 4px 8px !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.the-menu .MuiListItemButton-root:hover {
+  background-color: var(--accent-secondary) !important;
+  color: var(--accent-primary) !important;
+}
+
+.the-menu .MuiListItemButton-root.Mui-selected {
+  background-color: var(--accent-primary) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.4);
+}
+
+.the-menu .MuiListItemButton-root.Mui-selected .MuiListItemIcon-root svg,
+.the-menu .MuiListItemButton-root.Mui-selected .MuiListItemText-primary {
+  color: white !important;
+}
+
+/* ==========================================================================
+   -- 主页：通用卡片样式 --
+   ========================================================================== */
+.MuiBox-root.css-23cvz {
+  background-color: var(--background-card-primary) !important;
+  backdrop-filter: blur(var(--backdrop-blur-value));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-value));
+  border-radius: 16px !important;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px var(--shadow-color) !important;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.MuiBox-root.css-23cvz:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--shadow-color) !important;
+}
+
+.MuiBox-root.css-rbmxes {
+  /* 卡片标题栏 */
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+.base-page {
+  opacity: 0.8;
+}
+
+h6.MuiTypography-root.css-15wpa34 {
+  /* 卡片标题文字 */
+  color: var(--text-primary);
+  font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   -- 代理页面：代理组/代理节点列表 --
+   ========================================================================== */
+.MuiButtonBase-root.MuiListItemButton-root.css-ulr2qx,
+.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-117w6su {
+  background-color: var(--background-card-primary) !important;
+  backdrop-filter: blur(var(--backdrop-blur-value));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur-value));
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-color) 0px 2px 5px !important;
+  transition: all 0.2s ease-in-out !important;
+  margin-bottom: 10px !important;
+}
+
+.MuiButtonBase-root.MuiListItemButton-root.css-ulr2qx:hover,
+.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-117w6su:hover {
+  border-color: var(--accent-primary) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(49, 130, 206, 0.2) !important;
+}
+
+/* 移除可能存在的、针对每个代理组的复杂背景图样式 */
+[data-testid="virtuoso-item-list"] > div[data-item-index] > .css-ulr2qx {
+  background-image: none !important;
+}
+
+/* ==========================================================================
+   -- 通用组件与杂项 --
+   ========================================================================== */
+
+/* 开关按钮 */
+.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+  background-color: var(--success-color) !important;
+  opacity: 1 !important;
+}
+
+/* 【滚动条颜色修改】 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #50a1e6; /* 悬浮时颜色变亮 */
+  background-clip: content-box;
+}
