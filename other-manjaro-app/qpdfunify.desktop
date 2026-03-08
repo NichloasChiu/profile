@@ -1,0 +1,11 @@
+[Desktop Entry]
+# add ~/.local/share/applications/qpdfunify.desktop
+Version=1.0
+Name=PDF合并
+Comment=PDF合并
+Exec=/home/nichloaschiu/.local/share/qpdfunify/qpdfunify
+Icon=/home/nichloaschiu/.local/share/qpdfunify/favicon.ico
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+
